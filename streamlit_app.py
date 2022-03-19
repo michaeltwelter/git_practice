@@ -22,12 +22,11 @@ dataset_name = st.sidebar.selectbox(
   'Select Dataset',
   ('Iris', 'Breast Cancer', 'Wine'))
 
-st.write((f'## {dataset_name} Dataset')
+st.write(f'## {dataset_name} Dataset')
          
 classifier_name = st.sidebar.selectbox(
     'Select classifier',
-    ('KNN', 'SVM', 'Random Forest')
-)         
+    ('KNN', 'SVM', 'Random Forest'))         
          
 def get_dataset(name):
     data = None
